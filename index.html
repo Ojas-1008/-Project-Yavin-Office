@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Yavin Office</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parisienne&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--FB CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fastbootstrap@2.2.0/dist/css/fastbootstrap.min.css" rel="stylesheet"
+        integrity="sha256-V6lu+OdYNKTKTsVFBuQsyIlDiRWiOmtC8VQ8Lzdm2i4=" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Hover CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR START -->
+    <div class="position-relative" data-aos="fade-down" data-aos-duration="1100">
+        <!-- Granim.js background canvas -->
+        <canvas id="granim-canvas" role="presentation"></canvas>
+        <nav class="navbar navbar-expand-lg sticky-top py-5 bg-glass">
+            <div class="container">
+
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand" data-aos="fade-right" data-aos-duration="800"
+                    data-aos-delay="200">
+                    <img src="images/logo.svg" alt="Yavin Office Logo" height="40">
+                </a>
+
+                <!-- Toggler Button -->
+                <button class="navbar-toggler btn btn-light rounded-pill border-2 border-primary-subtle" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" data-aos="fade-left"
+                    data-aos-duration="800" data-aos-delay="200">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible Links -->
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul
+                        class="navbar-nav ms-auto align-items-center navbar-nav-pills navbar-nav-underline gap-2 gap-lg-0 mt-3 mt-lg-0">
+                        <!-- Home Link -->
+                        <li class="nav-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
+                            <a href="index.html" class="nav-link fw-bold text-uppercase text-dark px-5 py-3">
+                                <i class="fa-solid fa-house me-1"></i>Home
+                            </a>
+                        </li>
+
+                        <!-- Details Link -->
+                        <li class="nav-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="500">
+                            <a href="#details" class="nav-link fw-bold text-uppercase text-dark px-5 py-3">
+                                <i class="fas fa-info-circle me-1"></i>Details
+                            </a>
+                        </li>
+
+                        <!-- Services Link -->
+                        <li class="nav-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="700">
+                            <a href="#services" class="nav-link fw-bold text-uppercase text-dark px-5 py-3">
+                                <i class="fas fa-screwdriver-wrench me-1"></i>Services
+                            </a>
+                        </li>
+
+                        <!-- Projects Link -->
+                        <li class="nav-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="900">
+                            <a href="#projects" class="nav-link fw-bold text-uppercase text-dark px-5 py-3">
+                                <i class="fas fa-briefcase me-1"></i>Projects
+                            </a>
+                        </li>
+
+                        <!-- CTA Button -->
+                        <li class="nav-item hvr-float-shadow" data-aos="fade-right" data-aos-duration="800"
+                            data-aos-delay="1100">
+                            <a href="#contact"
+                                class="btn btn-lg btn-outline-success rounded-pill text-dark fw-bold px-5 py-3 border-2"
+                                type="button">
+                                <i class="fas fa-envelope-open-text me-1"></i>Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- NAVBAR END -->
+
+    <!-- HERO START -->
+    <section
+        class="hero mt-20 d-flex justify-content-center align-items-center position-relative px-14 px-md-8 p-lg-0 text-center">
+        <!-- Decorative Stars -->
+        <img src="images/decoration-star.svg" loading="lazy" class="img-fluid position-absolute z-n1 star-1"
+            data-aos="fade" data-aos-duration="2000" data-aos-delay="3000">
+        <img src="images/decoration-star.svg" class="img-fluid position-absolute z-n1 star-2" loading="lazy"
+            data-aos="fade" data-aos-duration="2000" data-aos-delay="3000">
+
+        <div class="container position-relative z-5">
+            <div class="row justify-content-center align-items-center g-5 g-md-8 g-lg-16">
+
+                <!-- Left Column -->
+                <div class="col-lg-6 p-5 mt-5 hero-glass text-center order-lg-1 order-2" data-aos="fade-down"
+                    data-aos-delay="1500">
+
+                    <!-- Hero Heading -->
+                    <h1 class="display-1 fw-bolder mb-5">
+                        The <span class="text-primary">Perfect</span> Office Space
+                    </h1>
+
+                    <!-- Supporting Para -->
+                    <p class="lead mb-5 fw-semibold px-md-2">
+                        We specialize in transforming office spaces into <span class="text-success fw-bold">inspiring &
+                            functional</span> environments. Let us bring your vision to life.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="btn-group mb-5 gap-5" data-aos="zoom-in" data-aos-delay="1800">
+                        <a href="#details"
+                            class="btn btn-lg btn-outline-primary rounded-pill text-dark fw-bold border-2 d-flex justify-content-center align-items-center">
+                            <dotlottie-player
+                                src="https://lottie.host/4ad1bd9d-5ed0-41c9-8965-17c3cf0ffc7d/40f7UKS16o.json"
+                                background="transparent" speed="0.5" style="width: 30px; height: 30px" loop
+                                autoplay></dotlottie-player>
+                            More Info
+                        </a>
+
+                        <a href="#contact"
+                            class="btn btn-lg btn-outline-success rounded-pill text-dark fw-bold border-2 d-flex justify-content-center align-items-center">
+                            <dotlottie-player
+                                src="https://lottie.host/ee9ba2df-308f-4e1b-ae6f-26f183063661/KA19LVoibq.json"
+                                background="transparent" speed="0.5" style="width: 26px; height: 26px" loop
+                                autoplay></dotlottie-player>
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div
+                    class="col-lg-6 mt-5 d-flex justify-content-center align-items-center order-lg-2 order-1 text-center mb-5">
+                    <img src="images/hero-2.png"
+                        srcset="images/hero-3.png 400w, images/hero-2.png 800w, images/hero-1.png 1024w"
+                        sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 600px"
+                        class="img-fluid rounded-circle" loading="lazy" data-aos="zoom-out-up" data-aos-duration="1200"
+                        data-aos-delay="2300" alt="Modern office space with ergonomic furniture and natural lighting">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HERO END -->
+
+    <!-- STATS START -->
+    <section class="stats mt-10 text-center mb-5" id="stats">
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-5" data-aos="fade-down" data-aos-duration="1000"
+                data-aos-delay="400">
+                <div class="col-md-3 col-6">
+                    <div class="card shadow-lg h-100 rounded-5 bg-dark-subtle border-2 border-success">
+                        <div class="card-body">
+                            <i class="fas fa-smile-beam fa-3x text-primary mb-3"></i>
+                            <h1 class="display-1 text-black fw-bold" id="stat-customers" data-target="6000">6000</h1>
+                            <p class="fw-bold text-black">Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card shadow-lg h-100 rounded-5 bg-dark-subtle border-2 border-success">
+                        <div class="card-body">
+                            <i class="fas fa-tools fa-3x text-success mb-3"></i>
+                            <h1 class="display-1 text-dark fw-bold text-black" id="stat-issues" data-target="1200">1200
+                            </h1>
+                            <p class="fw-bold text-black">Issues Solved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card shadow-lg h-100 rounded-5 bg-dark-subtle border-2 border-success">
+                        <div class="card-body">
+                            <i class="fas fa-star fa-3x text-warning mb-3"></i>
+                            <h1 class="display-1 text-dark fw-bold text-black" id="stat-reviews" data-target="5600">5600
+                            </h1>
+                            <p class="fw-bold text-black">Five Star Reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card shadow-lg h-100 rounded-5 bg-dark-subtle border-2 border-success">
+                        <div class="card-body">
+                            <i class="fas fa-briefcase fa-3x text-danger mb-3"></i>
+                            <h1 class="display-1 text-dark fw-bold text-black" id="stat-cases" data-target="1800">1800
+                            </h1>
+                            <p class="fw-bold text-black">Case Studies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- STATS END -->
+
+    <!-- INTRODUCTION START -->
+    <section id="intro" class="bg-light">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-10 text-center mt-16 mb-16 mx-auto" data-aos="fade-down" data-aos-duration="1000"
+                    data-aos-delay="600">
+                    <div
+                        class="outer mx-auto p-lg-16 p-12 rounded-5 position-relative d-flex justify-content-center align-items-center w-100 h-auto">
+                        <div class="dot"></div>
+                        <!-- Decorative lines -->
+                        <div class="line topl"></div>
+                        <div class="line leftl"></div>
+                        <div class="line bottoml"></div>
+                        <div class="line rightl"></div>
+                        <div
+                            class="card2 w-100 h-auto rounded-5 border border-3 border-primary-subtle p-lg-7 p-5 mx-auto text-white d-flex flex-column justify-content-center align-items-center">
+
+                            <!-- Title -->
+                            <h2 class="text text-warning fw-bold mb-3 fs-1 fs-md-2 fs-lg-1">
+                                Creating Inspiring Office Spaces
+                            </h2>
+
+                            <!-- Description -->
+                            <p class="fs-5 fs-md-4">
+                                At Yavin Office, our team of experts is dedicated to transforming your workspace into a
+                                functional and aesthetically pleasing environment that reflects your brand's identity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- INTRODUCTION END -->
+
+    <!-- DETAILS 1 START -->
+    <section id="details" class="position-relative my-5">
+        <div class="container position-relative">
+            <div class="row justify-content-center align-items center">
+
+                <!-- Left image -->
+                <div class="col-lg-6 image d-md-block d-none my-auto" data-aos="fade-down" data-aos-delay="300">
+                    <img src="images/details-1.png" class="img-fluid">
+                </div>
+
+                <!-- Right content card -->
+                <div class="col-lg-6 mt-5 card3" data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="card-container w-100 h-100 d-flex flex-column justify-content-center align-items-center rounded-5 py-8 px-10">
+
+                        <!-- Section heading -->
+                        <div class="title-card py-3 mx-auto text-center" data-aos="zoom-in" data-aos-delay="700">
+                            <h2 class="fw-bold text-light">
+                                Creating <span class="text-danger">Unique</span> Office Spaces
+                            </h2>
+                        </div>
+
+                        <!-- Feature list -->
+                        <div class="card-content rounded-5 px-5">
+                            <ul class="list-unstyled vstack gap-3 mt-5">
+
+                                <!-- Bullet 1 -->
+                                <li class="d-flex" data-aos="fade-right" data-aos-delay="800">
+                                    <i class="fas fa-palette text-warning fa-2x mx-4"></i>
+                                    <p>Our approach ensures that every office space is tailored to the unique needs and
+                                        preferences of our clients. No two spaces look the same.</p>
+                                </li>
+
+                                <!-- Bullet 2 -->
+                                <li class="d-flex" data-aos="fade-left" data-aos-delay="900">
+                                    <i class="fas fa-ruler-combined text-warning fa-2x mx-4"></i>
+                                    <p>We pay attention to every detail, ensuring that the design elements, furniture,
+                                        and
+                                        decor create a harmonious and inspiring atmosphere.</p>
+                                </li>
+
+                                <!-- Bullet 3 -->
+                                <li class="d-flex" data-aos="fade-right" data-aos-delay="1000">
+                                    <i class="fas fa-briefcase text-warning fa-2x mx-4"></i>
+                                    <p>Our team of experts guarantees that your office space will be a reflection of
+                                        your
+                                        brand identity and company culture.</p>
+                                </li>
+
+                                <!-- Bullet 4 -->
+                                <li class="d-flex" data-aos="fade-left" data-aos-delay="1100">
+                                    <i class="fas fa-lightbulb text-warning fa-2x mx-4"></i>
+                                    <p>We focus on creating environments where productivity, creativity, and employee
+                                        well-being thrive together seamlessly.</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DETAILS 1 END -->
+
+    <!-- SERVICES START -->
+    <section class="py-5 my-5" id="services">
+        <div class="container">
+            <!-- Outer row with section heading and service cards -->
+            <div class="row justify-content-center align-items-center g-10">
+
+                <!-- Title and Description -->
+                <div class="col-lg-5 col-12 text-center text-lg-start mt-sm-10" data-aos="zoom-in" data-aos-delay="100">
+                    <h2 class="fw-bold">
+                        <span class="text-primary">Services</span> That We Offer
+                    </h2>
+                    <p class="mt-3 fs-6 fs-lg-5">
+                        From concept to completion, we provide a full spectrum of office design solutions. Our expert
+                        team ensures every detail is crafted to enhance aesthetics, functionality, and productivity.
+                    </p>
+                </div>
+
+                <!-- Service Cards Wrapper -->
+                <div class="col-lg-7 col-12 mt-2 mt-lg-5 text-center">
+                    <!-- Cards Grid -->
+                    <div class="row justify-content-center align-items-center cards g-4">
+
+                        <!-- Service Card 1 -->
+                        <div class="col-md-4 mt-5 col-6 d-none d-md-inline-block" data-aos="zoom-out-up"
+                            data-aos-delay="100">
+                            <div class="card4 red">
+                                <i class="fas fa-compass-drafting fa-4x mb-2"></i>
+                                <p class="fs-6 fw-bold text">Analysis & Planning</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 2 -->
+                        <div class="col-md-4 mt-5 col-6 d-none d-md-inline-block" data-aos="zoom-out-up"
+                            data-aos-delay="300">
+                            <div class="card4 blue">
+                                <i class="fas fa-palette fa-4x mb-2"></i>
+                                <p class="fs-6 fw-bold text">Design & Color Choosing</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 3 -->
+                        <div class="col-md-4 col-6">
+                            <div class="card4 green" data-aos="zoom-out-up" data-aos-delay="500">
+                                <i class="fas fa-box-open fa-4x mb-2"></i>
+                                <p class="fs-6 fw-bold text">Materials & Delivery</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 4 -->
+                        <div class="col-md-4 mt-5 col-6" data-aos="zoom-out-up" data-aos-delay="700">
+                            <div class="card4 slate">
+                                <i class="fas fa-hammer fa-4x mb-2"></i>
+                                <p class="fs-6 fw-bold text">Execute The Concept</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 5 -->
+                        <div class="col-md-4 mt-5 col-6" data-aos="zoom-out-up" data-aos-delay="900">
+                            <div class="card4 purple">
+                                <i class="fas fa-tree-city fa-4x mb-2"></i>
+                                <p class="fs-6 fw-bold text">Create Great Atmosphere</p>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 6 -->
+                        <div class="col-md-4 mt-5 col-6" data-aos="zoom-out-up" data-aos-delay="1100">
+                            <div class="card4 gold">
+                                <i class="fas fa-chart-line fa-4x mb-2"></i>
+                                <p class="fs-6 fw-bold text">Evaluation & Reporting</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES END -->
+
+    <!-- DETAILS 2 START -->
+    <section class="details my-5 p-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <!-- Left Column -->
+                <div class="col-lg-6 text-center text-md-start my-auto" data-aos="fade-right" data-aos-delay="300">
+                    <!-- Heading -->
+                    <h2 class="fw-bold">
+                        Transform Your Workspace For Enhanced
+                        <span class="text-danger">Productivity</span>
+                    </h2>
+                    <!-- Description -->
+                    <p class="fw-semibold">
+                        A thoughtfully designed and well-organized office space has a
+                        profound impact on productivity and employee satisfaction.
+                        <span class="d-none d-md-inline">
+                            At our company, we specialize in creating tailored office environments
+                            that maximize productivity and elevate the overall work experience.
+                        </span>
+                    </p>
+                    <!-- CTA Button -->
+                    <div class="btn-container my-5">
+                        <button class="btn-content mx-auto mx-md-0" type="button" href="#">
+                            <span class="btn-title">Get Started</span>
+                            <span class="icon-arrow">
+                                <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <path id="arrow-icon-one"
+                                            d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                                            fill="#FFFFFF"></path>
+                                        <path id="arrow-icon-two"
+                                            d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                                            fill="#FFFFFF"></path>
+                                        <path id="arrow-icon-three"
+                                            d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                                            fill="#FFFFFF"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-delay="300">
+                    <img src="images/details-2.png" class="img-fluid d-none d-md-inline-block">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DETAILS 2 END -->
+
+    <!-- PROJECT START -->
+    <section id="projects" class="my-5 p-5">
+        <div class="container">
+            <!-- Section Heading -->
+            <h2 class="text-center fw-bold">
+                Some Of Our <span class="text-primary">Projects</span>
+            </h2>
+
+            <!-- Projects Grid -->
+            <div class="row mb-5 mt-6 justify-content-center align-items-center g-5">
+
+                <!-- Project Card 1 -->
+                <div class="col-md-4">
+                    <div class="card card5 h-100 rounded-5">
+                        <img src="images/project-1.jpg" class="img-fluid card-img-top" />
+                        <div class="card-body">
+                            <h4 class="fw-bold">Office Space For Banking</h4>
+                            <p class="card-text fw-semibold">
+                                A sleek and secure workspace designed to foster productivity and professionalism in a
+                                corporate banking environment.
+                            </p>
+                            <button class="read-more">
+                                <span aria-hidden="true" class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">Read More</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="col-md-4">
+                    <div class="card card5 h-100 rounded-5">
+                        <img src="images/project-2.jpg" class="img-fluid card-img-top" />
+                        <div class="card-body">
+                            <h4 class="fw-bold">Planning & Design For Startup</h4>
+                            <p class="card-text fw-semibold">
+                                A creative open-plan setup tailored for startups, blending functionality with vibrant
+                                collaborative spaces.
+                            </p>
+                            <button class="read-more">
+                                <span aria-hidden="true" class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">Read More</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="col-md-4">
+                    <div class="card card5 h-100 rounded-5">
+                        <img src="images/project-3.jpg" class="img-fluid card-img-top" />
+                        <div class="card-body">
+                            <h4 class="fw-bold">Colors & Materials Update</h4>
+                            <p class="card-text fw-semibold">
+                                A full renovation project updating the textures, palettes, and finishes for a more
+                                modern
+                                and inviting space.
+                            </p>
+                            <button class="read-more">
+                                <span aria-hidden="true" class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">Read More</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="col-md-4 d-none d-md-inline-block">
+                    <div class="card card5 h-100 rounded-5">
+                        <img src="images/project-4.jpg" class="img-fluid card-img-top" />
+                        <div class="card-body">
+                            <h4 class="fw-bold">Analysis & Floor Design</h4>
+                            <p class="card-text fw-semibold">
+                                Space optimization and custom floor planning tailored for client workflow and interior
+                                flow
+                                efficiency.
+                            </p>
+                            <button class="read-more">
+                                <span aria-hidden="true" class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">Read More</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="col-md-4 d-none d-md-inline-block">
+                    <div class="card card5 h-100 rounded-5">
+                        <img src="images/project-5.jpg" class="img-fluid card-img-top" />
+                        <div class="card-body">
+                            <h4 class="fw-bold">Office Space Decoration</h4>
+                            <p class="card-text fw-semibold">
+                                High-end decorative elements and custom furniture layouts for a sophisticated,
+                                functional
+                                work environment.
+                            </p>
+                            <button class="read-more">
+                                <span aria-hidden="true" class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">Read More</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="col-md-4 d-none d-md-inline-block">
+                    <div class="card card5 h-100 rounded-5">
+                        <img src="images/project-6.jpg" class="img-fluid card-img-top" />
+                        <div class="card-body">
+                            <h4 class="fw-bold">Playground For Kindergarten</h4>
+                            <p class="card-text fw-semibold">
+                                A playful and safe outdoor environment designed to stimulate creativity and physical
+                                activity in young children.
+                            </p>
+                            <button class="read-more">
+                                <span aria-hidden="true" class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">Read More</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- PROJECT END -->
+
+
+    <!-- TESTIMONIAL START -->
+    <section id="testimonials" class="bg-gradient-to-b from-white to-light py-8">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-6 text-primary">What Our Clients Say</h2>
+
+            <div id="testimonialCarousel" class="carousel slide shadow-lg rounded-4 overflow-hidden">
+                <div class="carousel-inner p-4">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column align-items-center text-center p-5 position-relative">
+                            <div class="bg-white p-4 rounded-3 shadow-sm mb-4 w-75">
+                                <i
+                                    class="fas fa-quote-left text-primary fs-2 position-absolute top-0 start-0 ms-4 mt-3"></i>
+                                <p class="fst-italic fs-5 mb-0">
+                                    “Working with this team was a game-changer for our company. Their attention to
+                                    detail
+                                    and ability to deliver on time helped us scale operations without sacrificing
+                                    quality.”
+                                </p>
+                                <i
+                                    class="fas fa-quote-right text-primary fs-2 position-absolute bottom-0 end-0 me-4 mb-3"></i>
+                            </div>
+                            <img src="images/testimonial-1.jpg" alt="Marlene Visconte"
+                                class="rounded-circle border border-3 border-primary" width="120" />
+                            <div class="mt-3">
+                                <h5 class="fw-bold mb-0">Marlene Visconte</h5>
+                                <p class="text-muted">General Manager - Scouter</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center text-center p-5 position-relative">
+                            <div class="bg-white p-4 rounded-3 shadow-sm mb-4 w-75">
+                                <i
+                                    class="fas fa-quote-left text-primary fs-2 position-absolute top-0 start-0 ms-4 mt-3"></i>
+                                <p class="fst-italic fs-5 mb-0">
+                                    “From concept to execution, everything was seamless. The team brought innovative
+                                    ideas
+                                    to the table and communicated clearly every step of the way. Highly recommended!”
+                                </p>
+                                <i
+                                    class="fas fa-quote-right text-primary fs-2 position-absolute bottom-0 end-0 me-4 mb-3"></i>
+                            </div>
+                            <img src="images/testimonial-2.jpg" alt="John Spiker"
+                                class="rounded-circle border border-3 border-primary" width="120" />
+                            <div class="mt-3">
+                                <h5 class="fw-bold mb-0">John Spiker</h5>
+                                <p class="text-muted">Team Leader - Vanquish</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center text-center p-5 position-relative">
+                            <div class="bg-white p-4 rounded-3 shadow-sm mb-4 w-75">
+                                <i
+                                    class="fas fa-quote-left text-primary fs-2 position-absolute top-0 start-0 ms-4 mt-3"></i>
+                                <p class="fst-italic fs-5 mb-0">
+                                    “The professionalism and creativity displayed were second to none. They understood
+                                    our
+                                    vision instantly and delivered something that exceeded expectations.”
+                                </p>
+                                <i
+                                    class="fas fa-quote-right text-primary fs-2 position-absolute bottom-0 end-0 me-4 mb-3"></i>
+                            </div>
+                            <img src="images/testimonial-3.jpg" alt="Stella Virtuoso"
+                                class="rounded-circle border border-3 border-primary" width="120" />
+                            <div class="mt-3">
+                                <h5 class="fw-bold mb-0">Stella Virtuoso</h5>
+                                <p class="text-muted">Design Chief - Bikegirl</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <i class="fas fa-chevron-left fa-2x text-primary"></i>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <i class="fas fa-chevron-right fa-2x text-primary"></i>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators mb-0">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TESTIMONIAL END -->
+
+    <!-- CONNECT START -->
+    <section id="connect" class="bg-secondary py-5">
+        <h1 class="display-6 fw-bold text-center text-danger">Connect With Us</h1>
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="main my-5">
+                <div class="up">
+                    <button class="card6">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0,0,256,256" width="30px" height="30px" fill-rule="nonzero" class="instagram">
+                            <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(8,8)">
+                                    <path
+                                        d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                    <button class="card7">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px"
+                            class="twitter">
+                            <path
+                                d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="down">
+                    <button class="card8">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"
+                            class="github">
+                            <path
+                                d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="card9">
+                        <svg height="30px" width="30px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"
+                            class="discord">
+                            <path
+                                d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONNECT END -->
+
+    <!-- FOOTER START -->
+    <footer class="text-white p-4 p-md-3 footer" data-aos="fade-down">
+        <div class="container">
+            <!-- Main Content Row -->
+            <div class="row gy-4">
+                <!-- Company Info Column -->
+                <div class="col-lg-6 col-md-6">
+                    <img src="images/favicon.png" alt="" width="40px" class="img-fluid mb-3">
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat
+                        voluptatibus
+                        placeat nam, commodi optio pariatur est.
+                    </p>
+                </div>
+
+                <!-- Quick Links Column  -->
+                <div class="col-lg-6 col-md-6">
+                    <h5 class="fw-bold mb-4 border-bottom border-light pb-2 animate__animated animate__fadeIn">Quick
+                        Links
+                    </h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <a href="#!" class="text-white text-decoration-none">
+                                        <i class="fas fa-angle-right me-2"></i>Home
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#!" class="text-white text-decoration-none">
+                                        <i class="fas fa-angle-right me-2"></i>Details
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#!" class="text-white text-decoration-none">
+                                        <i class="fas fa-angle-right me-2"></i>Services
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <a href="#!" class="text-white text-decoration-none">
+                                        <i class="fas fa-angle-right me-2"></i>Projects
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#!" class="text-white text-decoration-none">
+                                        <i class="fas fa-angle-right me-2"></i>Contact Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <hr class="opacity-100">
+                    <div class="d-sm-flex justify-content-between align-items-center">
+                        <p class="small mb-2 mb-sm-0 animate__animated animate__fadeIn">© 2025 Yavin. All rights
+                            reserved.
+                        </p>
+                        <div class="d-flex gap-3 small">
+                            <a href="#!"
+                                class="text-white text-decoration-none hvr-underline-from-center animate__animated animate__fadeIn">Privacy
+                                Policy</a>
+                            <a href="#!"
+                                class="text-white text-decoration-none hvr-underline-from-center animate__animated animate__fadeIn">Terms
+                                of Service</a>
+                            <a href="#!"
+                                class="text-white text-decoration-none hvr-underline-from-center animate__animated animate__fadeIn">Contact
+                                Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- Bootstrap JS (Core) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <!-- FB JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            offset: 150,
+        });
+    </script>
+
+    <!-- Granim JS -->
+    <script src="https://cdn.jsdelivr.net/npm/granim@2.0.0/dist/granim.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var granimInstance = new Granim({
+                element: '#granim-canvas',
+                direction: 'left-right',
+                isPausedWhenNotInView: true,
+                states: {
+                    "default-state": {
+                        gradients: [
+                            ['#d0e6ff', '#a1c4fd'],
+                            ['#c1f7d5', '#a4fbc4']
+                        ],
+                        transitionSpeed: 3000
+                    }
+                }
+            });
+        });
+    </script>
+
+    <!-- LottieFiles JS -->
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+</body>
+
+</html>
